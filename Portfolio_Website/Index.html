@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+        
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,">
+        <link rel="stylesheet" href="./css/Shared_Styles.css">
+        <title>Brandon Morter</title>
+    </head>
+
+    <body>
+        
+        <!-- Nav -->
+            <div>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        <!-- /Nav -->
+
+        <br>
+        <br>
+
+        <!-- Video -->
+            <div id="home">
+                <video id="video" autoplay muted loop> 
+                    <source src="./vid/header_vid.mp4">
+                </video>
+            </div>
+        <!-- /Video -->
+
+        <!-- Welcome Text -->
+            <div class="welcome_text">
+                <h1>Brandon Morter's Portfolio Page</h1>
+                <p>Welcome to my portfolio page.</p> <br/>
+                <p>Here I will give you a brief background of myself and invite you to explore my GitHub and more. </p><br/>
+                <p>Thanks for stopping by!</p>
+            </div>
+        <!-- /Welcome Text -->
+
+        <!-- About -->
+            <div class="row" id="about">
+                <!--Left column-->
+                    <div class="column_1">
+                        <img src="./img/img_3.jpg" alt="">
+                    </div>
+
+                <!--Right column-->
+                <div class="column_2">
+                    <h1 class="center">About</h1>
+                <p class="center">I am a student of the Tech Academy's C# and .Net Boot Camp. I have over a decade of experience in the live event technology field and a passion for anything technology.</p> <br/>
+                <p class="center">By the end of my course I will have training and experience in HTML, CSS, Javascript, SQL, C#, and more. I am a full-stack developer and would love to work on your project. </p>
+                </div>
+            </div>
+
+            <div class="row" id="GitHub">
+                <!--Left column-->
+                    <div class="column_1">
+                        <h1 class="center">GitHub</h1>
+                        <p class="center">You can view my GitHub Profile here:</p> <br/>
+                         <p class="center"><a href="https://github.com/Zeno-96">GitHub Profile</a></p>
+                    </div>
+
+                <!--Right column-->
+                <div class="column_2">
+                    <img src="./img/img_4.jpg" alt="">
+                 </div>
+            </div>
+        <!-- /About -->
+
+        <!-- Contact -->
+            <div id="contact">
+                <h1 class="center"> Contact</h1>
+                    <div>
+                        <form action="https://formspree.io/f/mknldjry" method="post">
+                            <label>Name:</label>
+                        <input type="text" placeholder="Name">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="E-Mail">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                        </form>
+                    </div>
+                 </div>
+        <!-- /Contact -->
+
+    </body>
+</html>
