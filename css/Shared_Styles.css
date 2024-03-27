@@ -1,51 +1,127 @@
-html {
-    font-family: "Playfair Display", 'Times New Roman', Times, serif; 
-}
-
 body {
-    background-color: black;
+    padding-top: 57px;
+    background-image: url("../img/header_img.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
-.navbar-brand {
-    font-variant: small-caps;
-    font-size: 2.5vw;
+.center {
     text-align: center;
 }
 
-.card-title {
-    font-size: 4vw;
-    text-align: center;
+.content {
+    background-color: rgba(0, 0, 0, 65%);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.card-img-overlay {
-    background: rgba(0, 0, 0, .375);
-}
-
-.card-text {
-    font-size: 2vw;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
+.text {
+    color: whitesmoke;
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-variant: small-caps;
-    text-align: Center;
-    color: ivory;
+    font-weight: 500;
+    padding: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 2vw;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.row {
+    margin: 2%;
+}
+
+.initial {
+    opacity: 0;
+}
+
+#Home {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#img1 {
+    width: inherit;
+    position: relative;
+    
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#img2 {
+    width: inherit;
+    position: relative;
+
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#img3 {
+    width: inherit;
+    position: relative;
+
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+img {
+    transition: transform 0.8s;
+}
+
+.img1:hover {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.img2:hover {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.img3:hover {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.delay {
+    animation: fadeInAnimation ease 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+form {
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 
 .form-label {
-    font-size: 2vw;
+    padding-top: 15px;
     color: whitesmoke;
 }
 
-.btn {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footerText {
-    text-align: center;
-    color: whitesmoke;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
